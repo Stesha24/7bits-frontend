@@ -32,6 +32,7 @@ li.item {
     color: rgb(0, 0, 0);
     text-transform: uppercase;
     line-height: 0.8;
+    letter-spacing: 10px;
 }
 
 .photomain {
@@ -215,7 +216,6 @@ li.post {
     text-transform: uppercase;
     line-height: 1.846;
     padding-right: 24px;
-    margin-bottom: 93px;
 }
 
 .icon2 {
@@ -226,29 +226,57 @@ li.post {
 .social {
     float: right;
     padding-left: 50px;
-    position: absolute;
+    position: relative;
     right: -96px;
+    margin-bottom: 96px;
+    padding-bottom: 96px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    /*    left: 0;*/
+    width: 100%;
+    height: 96px;
+    line-height: 96px;
+    background-color: rgb(217, 217, 217);
+}
+
+.leftMenu {
+    font-size: 14px;
+    font-family: "Playfair Display";
+    color: rgb(0, 0, 0);
+    float: left;
+}
+
+.terms,
+.privacy {
+    padding-left: 18px;
     
 }
 
-
-/*
-footer { 
+.follow { 
     font-size: 14px;
-    font-family: 'PlayfairDisplayRegular';
-    height: 97px;
-    line-height: 97px;
-    background-color: #d9d9d9;
+    font-family: "Playfair Display";
+    color: rgb(0, 0, 0);
+    padding-right: 22px;
 }
-*/
 
-
-.clear-both {
-    clear: both;
-    font-size: 14px;
-    font-family: 'PlayfairDisplayRegular';
-    height: 97px;
-    line-height: 97px;
-    background-color: #d9d9d9;
-    
+.rightMenu {
+    float: right;
+}
+.wrapper2 {
+    max-width: 1061px;
+    margin: 0 auto;
+}
+.icon3 {
+    padding-right: 18px;
+}
+.rightMenu:last-child {
+    padding-right: 0px;
 }
