@@ -7,7 +7,7 @@ a {
     margin-top: 68px;
 }
 
-li.item {
+.navigation-block__item {
     display: inline;
     font-size: 14px;
     font-family: "Playfair Display";
@@ -17,18 +17,18 @@ li.item {
     padding-left: 95px;
 }
 
-.article,
-nav {
+.logo,
+.navigation-block {
     display: inline-block;
     margin-bottom: 46px;
 }
 
-nav {
+.navigation-block {
     float: right;
     padding-top: 7px;
 }
 
-.article {
+.logo {
     
     font-size: 30px;
     font-family: "Inconsolata";
@@ -38,13 +38,13 @@ nav {
     letter-spacing: 10px;
 }
 
-.photomain {
+.main-block__cover_photo {
     max-width: 1061px;
     max-height: 509px;
     margin-bottom: 98px;
 }
 
-.photodiary {
+.content-block__left_photodiary {
     display: block;
     font-size: 14px;
     font-family: "Ubuntu";
@@ -54,12 +54,12 @@ nav {
     line-height: 1.2;
 }
 
-.right {
+.content-block__right {
     display: inline-block;
     width: 272px;
 }
 
-.left {
+.content-block__left {
     display: inline-block;
     float: left;
     max-width: 661px;
@@ -67,7 +67,7 @@ nav {
     margin-right: 128px;
 }
 
-.title {
+.content-block__left_title {
     font-size: 30px;
     font-family: "Playfair Display";
     color: rgb(98, 98, 98);
@@ -76,7 +76,7 @@ nav {
     line-height: 1.2;
 }
 
-.text {
+.content-block__left_text {
     font-size: 14px;
     font-family: "Playfair Display";
     color: rgb(98, 98, 98);
@@ -84,11 +84,11 @@ nav {
     margin-bottom: 67px;
 }
 
-.bold {
+.content-block__left_text_bold {
     font-weight: 800;
 }
 
-.about {
+.content-block__right_about {
     display: block;
     font-size: 24px;
     font-family: "Playfair Display";
@@ -97,11 +97,11 @@ nav {
     margin-bottom: 20px;
 }
 
-.sidephoto {
+.content-block__right_sidebar_sidephoto {
     margin-bottom: 13px;
 }
 
-.textAbout {
+.content-block__right_textAbout {
     font-size: 12px;
     font-family: "Playfair Display";
     color: rgb(98, 98, 98);
@@ -109,13 +109,13 @@ nav {
     margin-bottom: 25px;
 }
 
-.icon {
+.content-block__right_icons_icon {
     display: inline-block;
     padding-right: 15px;
     margin-bottom: 75px;
 }
 
-.top {
+.content-block__right_topPosts_top {
     display: block;
     font-size: 14px;
     font-family: "Ubuntu";
@@ -125,16 +125,16 @@ nav {
     margin-bottom: 37px;
 }
 
-li.post {
+.content-block__right_topPosts_posts_post {
     color: rgb(180, 173, 158);
     margin-bottom: 30px;
 }
 
-.post:last-child {
+.content-block__right_topPosts_posts_post:last-child {
     margin-bottom: 56px;
 }
 
-.name {
+.content-block__right_topPosts_posts_post_name {
     font-size: 16px;
     font-family: "Playfair Display";
     color: rgb(98, 98, 98);
@@ -142,7 +142,7 @@ li.post {
     margin-bottom: 17px;
 }
 
-.comments {
+.content-block__right_topPosts_posts_post_comments {
     font-size: 12px;
     font-family: "Ubuntu";
     color: rgb(180, 173, 158);
@@ -150,18 +150,18 @@ li.post {
     line-height: 1.2;
 }
 
-.banner {
+.content-block__right_banner {
     width: 250px;
     height: 250px;
     background-color: rgb(180, 173, 158);
     position: relative;
 }
 
-.photoBanner {
+.content-block__right_banner_photoBanner {
     opacity: 0.15;
 }
 
-.size {
+.content-block__right_banner_size {
     display: block;
     position: absolute;
     top: 94px;
@@ -174,7 +174,7 @@ li.post {
     font-weight: 100;
 }
 
-.bannerSpot {
+.content-block__right_banner_bannerSpot {
     font-size: 14px;
     font-family: "Ubuntu";
     color: rgb(255, 255, 255);
@@ -185,15 +185,15 @@ li.post {
     left: 78px;
 }
 
-.photo {
+.content-block__left_photos_photo {
     margin-bottom: 50px;
 }
 
-.photos:last-child {
+.content-block__left_photos_photo:last-child {
     margin-bottom: 60px;
 }
 
-.italics {
+.content-block__left_italics {
     padding-left: 21px;
     font-size: 14px;
     font-family: "Playfair Display";
@@ -203,7 +203,7 @@ li.post {
     margin-bottom: 40px;
 }
 
-.text2 {
+.content-block__left_text2 {
     font-size: 14px;
     font-family: "Playfair Display";
     color: rgb(98, 98, 98);
@@ -211,7 +211,7 @@ li.post {
     margin-bottom: 80px;
 }
 
-.share {
+.content-block__left_social_share {
     display: inline;
     font-size: 13px;
     font-family: "Ubuntu";
@@ -226,7 +226,7 @@ li.post {
     padding-right: 15px;
 }
 
-.social {
+.content-block__left_social {
     float: right;
     padding-left: 50px;
     position: relative;
@@ -250,15 +250,15 @@ footer {
     background-color: rgb(217, 217, 217);
 }
 
-.leftMenu {
+.leftMenu-block {
     font-size: 14px;
     font-family: "Playfair Display";
     color: rgb(0, 0, 0);
     float: left;
 }
 
-.terms,
-.privacy {
+.leftMenu-block_terms,
+.leftMenu-block_privacy {
     padding-left: 18px;
     
 }
@@ -270,7 +270,7 @@ footer {
     padding-right: 22px;
 }
 
-.rightMenu {
+.rightMenu-block {
     float: right;
 }
 .wrapper2 {
@@ -278,6 +278,6 @@ footer {
     margin: 0 auto;
 }
 
-.rightMenu:last-child {
+.rightMenu-block:last-child {
     padding-right: 0px;
 }
