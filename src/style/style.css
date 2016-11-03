@@ -18,18 +18,18 @@ li.item {
 }
 
 .article,
-.menu {
+nav {
     display: inline-block;
     margin-bottom: 46px;
 }
 
-.menu {
+nav {
     float: right;
     padding-top: 7px;
 }
 
 .article {
-    float: left;
+    
     font-size: 30px;
     font-family: "Inconsolata";
     color: rgb(0, 0, 0);
@@ -55,16 +55,16 @@ li.item {
 }
 
 .right {
-    display: inline;
-    float: right;
+    display: inline-block;
     width: 272px;
 }
 
 .left {
-    display: inline;
+    display: inline-block;
     float: left;
     max-width: 661px;
     position: relative;
+    margin-right: 128px;
 }
 
 .title {
@@ -277,9 +277,7 @@ footer {
     max-width: 1061px;
     margin: 0 auto;
 }
-.icon3 {
-    padding-right: 18px;
-}
+
 .rightMenu:last-child {
     padding-right: 0px;
 }
