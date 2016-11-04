@@ -1,0 +1,197 @@
+body {
+    margin: 0 auto;
+    max-width: 1600px;
+    /*    background: #ccc;*/
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.header-block {
+    background-image: url(../images/bg_photo.jpg);
+    height: 605px;
+    max-width: 1600px;
+    position: relative;
+}
+
+.header-block__logo {
+    float: left;
+    margin-right: 30px;
+}
+
+.header-block__nav_item {
+    display: inline-block;
+    list-style: none;
+    margin-right: 50px;
+    font-size: 14px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    color: rgb(242, 108, 79);
+    text-transform: uppercase;
+    line-height: 1.714;
+}
+
+.header-block__nav_menu {
+    line-height: 95px;
+    float: left;
+}
+
+.header-block__menuBars {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+main,
+aside {
+    display: inline-block;
+}
+
+.main-block {
+    float: left;
+    padding-left: 275px;
+    padding-right: 60px;
+    max-width: 575px;
+    position: relative;
+    background: #FFF;
+    top: -60px;
+}
+
+.main-block__header {
+    background: #FFF;
+    margin-bottom: 67px;
+}
+
+.main-block__header_news {
+    line-height: 60px;
+    display: inline-block;
+    font-size: 15px;
+    font-family: "Georgia";
+    color: rgb(80, 109, 129);
+    font-style: italic;
+}
+
+.main-block__header_contactUs {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+.main-block__title {
+    margin-bottom: 37px;
+    /*    padding-top: 67px;*/
+    font-size: 43px;
+    font-weight: 500;
+    font-family: 'Raleway';
+    color: rgb(21, 63, 96);
+    text-transform: uppercase;
+    line-height: 1.163;
+}
+
+.main-block__semiTitle {
+    margin-bottom: 55px;
+    font-size: 20px;
+    font-family: "Georgia";
+    color: rgb(80, 109, 129);
+    font-style: italic;
+    line-height: 1.2;
+}
+
+.main-block__line {
+    /*    margin-top: 48px;*/
+    margin-bottom: 70px;
+    width: 580px;
+    height: 2px;
+    background: rgb(230, 229, 215);
+}
+
+.main-block__articles_article {
+    margin-bottom: 40px;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    color: rgb(21, 63, 96);
+    line-height: 22px;
+}
+
+.main-block__articles:last-child {
+    margin-bottom: 200px;
+}
+
+.aside-block {
+    background: rgb(26, 199, 195);
+    width: 690px;
+}
+
+.aside-block__content {
+    margin-top: 314px;
+    margin-left: 60px;
+    margin-right: 250px;
+    padding-bottom: 392px;
+}
+
+.aside-block__content_title {
+    font-size: 30px;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.aside-block__content_article {
+    font-size: 14px;
+    font-family: 'Roboto';
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    line-height: 29px;
+}
+
+.footer-block {
+    margin-top: -511px;
+    height: 725px;
+    background: rgb(242, 108, 79);
+}
+
+.footer-block__content {
+    padding-left: 270px;
+    width: 560px;
+}
+
+.footer-block__content_title {
+    font-size: 40px;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    padding-top: 105px;
+    margin-bottom: 45px;
+}
+
+.footer-block__content_semiTitle {
+    font-size: 18px;
+    font-family: "Georgia";
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.footer-block__content_article {
+    font-size: 14px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+}
+
+.footer-block__content_button {
+    margin-bottom: 170px;
+}
+
+.footer-block__content_text {
+    font-size: 13px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+}
