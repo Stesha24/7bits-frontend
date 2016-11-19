@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Palo alto</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+    <!--
+    <div class="progress-bar"></div>
+    <div class="wrapper">
+-->
+   <div class="wrapper">
+    <header>
+        <a href="index.html"><img src="../images/logo.png" alt=""></a>
+        <nav>
+    <ul class="nav__items">
+        <a {% if navInactiveItem == 1 %}class="nav__item_inactive item"{% else %}class = "nav__item item"{% endif %} href="index.html">
+            <li>Home</li>
+        </a>
+        <a {% if navInactiveItem == 2 %} class="nav__item_inactive item"{% else %} class = "nav__item item" {% endif %}  href="#">
+            <li>About</li>
+        </a>
+        <a {% if navInactiveItem == 3 %} class="nav__item_inactive item"{% else %} class = "nav__item item" {% endif %}  href="#">
+            <li>Archive</li>
+        </a>
+        <a {% if navInactiveItem == 4 %} class="nav__item_inactive item"{% else %} class = "nav__item item" {% endif %} href="contact.html">
+            <li>Contact</li>
+        </a>
+        <a class="nav__item_inactive item search" href="#">
+            <li></li>
+        </a>
+    </ul>
+</nav>
+    </header>
+</div>
+    {% block main %}
+   
+    
+    {% endblock %}
+
+    <footer>
+        <div class="footer__content">
+            <a href="index.html"><img src="../images/logo.png" alt="text-picture" class="footer__logo"></a>
+            <ul class="footer__menu">
+                <a href="index.html" {% if navInactiveItem == 1 %} class="footer__item_inactive item"{% else %} class = "footer__item item" {% endif %}>
+                    <li>Home</li>
+                </a>
+                <a href="#" {% if navInactiveItem == 2 %} class="footer__item_inactive item"{% else %} class = "footer__item item" {% endif %}>
+                    <li>About</li>
+                </a>
+                <a href="#"{% if navInactiveItem == 3 %} class="footer__item_inactive item"{% else %} class = "footer__item item" {% endif %}>
+                    <li>Archive</li>
+                </a>
+                <a href="contact.html" {% if navInactiveItem == 4 %} class="footer__item_inactive item"{% else %} class = "footer__item item" {% endif %}>
+                    <li>Contact</li>
+                </a>
+                <a href="#" class="footer__item item search search_foot">
+                    <li></li>
+                </a>
+            </ul>
+            <div class="footer__separate sep"></div>
+            <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sit fugiat, atque, corrupti voluptates saepe id accusantium, praesentium qui quos, dolor perspiciatis? Dignissimos neque molestias velit maiores mollitia.</p>
+            <div class="footer__separate_sep2 sep"></div>
+            <p class="footer__sign">©2015 - Palo Alto. All Rights Reserved. Designed &amp; Developed by <a href="#" class="footer__sign_name">PixelBuddha Team</a></p>
+            <ul class="footer__social">
+                <a href="#" class="footer__social_item size">
+                    <li><img src="../images/icon-fb.png" alt=""></li>
+                </a>
+                <a href="#" class="footer__social_item size">
+                    <li><img src="../images/icon-tw.png" alt=""></li>
+                </a>
+                <a href="#" class="footer__social_item size">
+                    <li><img src="../images/icon-inst.png" alt=""></li>
+                </a>
+                <a href="#" class="footer__social_item size">
+                    <li><img src="../images/icon-pin.png" alt=""></li>
+                </a>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

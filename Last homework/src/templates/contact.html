@@ -1,77 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Palo Alto</title>
-    <link rel="stylesheet" href="../style/reset.css">
-    <link rel="stylesheet" href="../style/style.css">
-</head>
-
-<body>
-    <div class="progress-bar"></div>
-    <div class="wrapper">
-        <header>
-            <a href="#"><img src="../images/logo.png" alt=""></a>
-            <nav>
-                <ul class="nav__items">
-                    <a class="nav__item item" href="index.html">
-                        <li>Home</li>
-                    </a>
-                    <a class="nav__item item" href="#">
-                        <li>About</li>
-                    </a>
-                    <a class="nav__item item" href="#">
-                        <li>Archive</li>
-                    </a>
-                    <a class="nav__item_inactive item" href="contact.html">
-                        <li>Contact</li>
-                    </a>
-                    <a class="nav__item_inactive item search" href="#">
-                        <li></li>
-                    </a>
-                </ul>
-            </nav>
-        </header>
+  {% set navInactiveItem = 4%}
+    {% extends "layout.html" %} 
+  
+{% block main %}
+        <div class="wrapper">
         <main>
             <article class="article">
                 <div class="article__content article__content_contact">
                     <h1 class="article__title">Contact us.</h1>
                     <p class="article__text  article__text_contact">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos nulla, libero. Quae id maiores totam unde, neque sequi adipisci voluptatibus est laboriosam, exercitationem cum dolores corporis, nam inventore vitae alias magni.</p>
                     <div class="article__separate sep sep_contact"></div>
+                    <form>
                     <div class="article__forms">
-                        <input type="text" size="40" placeholder="Your name" class="article__forms_form">
-                        <input type="text" size="40" placeholder="Email" class="article__forms_form">
-                        <input type="text" size="100" placeholder="Subject" class="article__forms_subject">
-                        <textarea class="article__forms_textarea" name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+                        <input name="name" type="text" size="40" placeholder="Your name" class="article__forms_form">
+                        <input name="email" type="text" size="40" placeholder="Email" class="article__forms_form">
+                        <input name="subject" type="text" size="100" placeholder="Subject" class="article__forms_subject">
+                        <textarea name="message" class="article__forms_textarea" name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
                     </div>
-                    <button class="article__button">Send message</button>
+                    <button name="send" type="submit" class="article__button">Send message</button>
+                    </form>
                 </div>
             </article>
         </main>
     </div>
-    <footer>
-        <div class="footer__content">
-            <img src="../images/logo-footer.png" alt="" class="footer__logo">
-            <ul class="footer__menu">
-                <a href="#" class="footer__item_inactive item"><li>Home</li></a>
-                <a href="#" class="footer__item item"><li>About</li></a>
-                <a href="#" class="footer__item item"><li>Archive</li></a>
-                <a href="#" class="footer__item item"><li>Contact</li></a>
-                <a href="#" class="footer__item item search search_foot"><li></li></a>
-            </ul>
-            <div class="footer__separate sep"></div>
-            <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sit fugiat, atque, corrupti voluptates saepe id accusantium, praesentium qui quos, dolor perspiciatis? Dignissimos neque molestias velit maiores mollitia.</p>
-            <div class="footer__separate_sep2 sep"></div>
-            <p class="footer__sign">©2015 - Palo Alto. All Rights Reserved. Designed &amp; Developed by <a href="#" class="footer__sign_name">PixelBuddha Team</a></p>
-            <ul class="footer__social">
-                <a href="#" class="footer__social_item size"><li><img src="../images/icon-fb.png" alt=""></li></a>
-                <a href="#" class="footer__social_item size"><li><img src="../images/icon-tw.png" alt=""></li></a>
-                <a href="#" class="footer__social_item size"><li><img src="../images/icon-inst.png" alt=""></li></a>
-                <a href="#" class="footer__social_item size"><li><img src="../images/icon-pin.png" alt=""></li></a>
-            </ul>
-        </div>
-    </footer>
-</body>
-
-</html>
+         {% endblock %}
