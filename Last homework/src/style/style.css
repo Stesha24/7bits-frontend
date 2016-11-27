@@ -1,6 +1,6 @@
 body {
     background: rgb(247, 249, 252);
-    font-family: 'Lato';
+    font-family: 'Lato', serif;
 }
 
 li {
@@ -366,8 +366,6 @@ footer {
 
 .size {
     box-sizing: border-box;
-    width: 32px;
-    height: 32px;
     border: 5px solid transparent;
     
 }
