@@ -1,0 +1,49 @@
+/*CONTACT*/
+.article__content_contact {
+    padding-bottom: 108px;
+}
+.article__text_contact {
+    margin-top: 50px;
+}
+.sep_contact {
+    margin-bottom: 50px;
+}
+
+.article__forms_form {
+    box-sizing: border-box;
+    width: 366px;
+    height: 56px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: rgb(247, 249, 252);
+    color: #000;
+    outline: none;
+    margin-bottom: 30px;
+}
+.article__forms_form:first-child {
+    margin-right: 19px;
+}
+
+.article__forms_subject {
+    box-sizing: border-box;
+    width: 100%;
+    height: 56px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: rgb(247, 249, 252);
+    color: #000;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+.article__forms_textarea {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 60px;
+    max-width: 100%;
+    background: rgb(247, 249, 252);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    outline: none;
+}
