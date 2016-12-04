@@ -47,3 +47,8 @@
     padding-top: 20px;
     outline: none;
 }
+@media (max-width: 768px) {
+    .article__forms_form {
+        width: 100%;
+    }
+}
