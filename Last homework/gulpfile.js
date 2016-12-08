@@ -3,20 +3,27 @@ var nunjucks = require('gulp-nunjucks');
 var concat = require('gulp-concat');
 var cssmin = require('gulp-cssmin');
 var autoprefixer = require('gulp-autoprefixer');
+var uglify = require('gulp-uglify');
 var browserSync = require('browser-sync').create();
 
 var path = {
     css:  'src/style/*.css',
+    js: 'src/scripts/*.js',
     html: 'src/templates/*.html',
+    partials: 'src/templates/partials/*.html',
+    mock: 'src/mockapi/*.json',
     vendor: {
       css: 'src/vendor/css/*.css'
     },
     img: 'src/images/*',
     dist: {
       css:  'dist/style/',
+      js: 'dist/scripts/',
       html: 'dist/',
+      partials: 'dist/partials/',
       vendor: 'dist/vendor/',
-      img: 'dist/images/'
+      img: 'dist/images/',
+      mock: 'dist/mockapi'
     }
 };
 
@@ -41,6 +48,19 @@ gulp.task('css-min', function () {
     .pipe(gulp.dest(path.dist.css));
 });
 
+gulp.task('js', function () {
+  return gulp.src(path.js)
+    .pipe(concat('scripts.js'))
+    .pipe(gulp.dest(path.dist.js));
+});
+
+gulp.task('js-min', function () {
+  return gulp.src(path.js)
+    .pipe(concat('scripts.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest(path.dist.js));
+});
+
 
 gulp.task('html', function () {
   return gulp.src(path.html)
@@ -48,9 +68,19 @@ gulp.task('html', function () {
     .pipe(gulp.dest(path.dist.html));
 });
 
+gulp.task('partials', function () {
+  return gulp.src(path.partials)
+    .pipe(gulp.dest(path.dist.partials));
+});
+
 gulp.task('img', function () {
   return gulp.src(path.img)
     .pipe(gulp.dest(path.dist.img));
+});
+
+gulp.task('mock', function () {
+  return gulp.src(path.mock)
+    .pipe(gulp.dest(path.dist.mock));
 });
 
 gulp.task('vendor-css', function () {
@@ -66,14 +96,17 @@ gulp.task('vendor-css-min', function () {
     .pipe(gulp.dest(path.dist.vendor));
 });
 
-gulp.task('build', ['html', 'css', 'vendor-css', 'img']);
-gulp.task('prod', ['html', 'css-min', 'vendor-css-min', 'img']);
+gulp.task('build', ['html', 'css', 'js', 'vendor-css', 'img', 'mock']);
+gulp.task('prod', ['html', 'css-min', 'js-min', 'vendor-css-min', 'img', 'mock']);
 
 gulp.task('watch', function () {
   gulp.watch(path.css, ['css']);
+  gulp.watch(path.js, ['js']);
   gulp.watch(path.html, ['html']);
+  gulp.watch(path.partials, ['partials']);
   gulp.watch(path.vendor.css, ['vendor-css']);
   gulp.watch(path.img, ['img']);
+  gulp.watch(path.mock, ['mock']);
 });
 
 gulp.task('serve', ['watch'], function() {

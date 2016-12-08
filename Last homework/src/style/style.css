@@ -479,20 +479,34 @@ footer {
             top: -153px;
         }
         .article__date {
-            font-size: 21px;
+            font-size: 15px;
         }
         .article__title {
-            font-size: 32px;
+            font-size: 24px;
         }
         .sep {
             margin-top: 40px;
             margin-bottom: 38px;
         }
         .article__text {
-            font-size: 22px;
+            font-size: 16px;
+        }
+        .article__button {
+            font-size: 20px;
+            left: -16px;
+            padding: 18px 15px;
         }
         .article__footer {
             margin-top: 35px;
+        }
+        .articles__tags_tag {
+            font-size: 15px;
+        }
+        .article__text_pre {
+            font-size: 18px;
+        }
+        .article__text_in {
+            font-size: 17px;
         }
         .footer__content {
             width: 262px;
@@ -525,4 +539,5 @@ footer {
         .footer__logo {
             margin-bottom: 60px;
         }
+    
     }

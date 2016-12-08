@@ -1,0 +1,39 @@
+<article class="article">
+    {% if type == 2 %}
+    <div class="article__cover">
+
+        <img srcset="{{image}} 1x, ,{{image2x}} 2x" alt="cover" class="article__cover_photo" width="952px" , height="535px">
+        <div class="article__photo_hover">
+            <div class="article__cover_shadow"></div>
+            <button class="article__cover_button"><img src="../images/pin.png" alt=""></button>
+        </div>
+    </div>{% else %}{% endif %}
+    <div class="article__content">
+        {% if type == 2 %}<a href="#" class="article__category article__category_mod">{{category}}</a>{% else %}
+        <a href="#" class="article__category">{{category}}</a> {% endif %}
+        <p class="article__date">{{date}}</p>
+        <h1 class="article__title">{{title}}</h1>
+        <div class="article__separate sep"></div>
+        <p class="article__text_pre">{{preText}}</p>
+        <p class="article__text">
+            {% if type == 3 %}<img srcset="{{imageIn}} 1x, {{imageIn2x}} 2x" alt="" class="article__text_photo" width="183px" height="388px"> {% else %} {% endif %}
+        </p>
+        {% for par in texts %}
+        {% if par.view == 'quote' %} <p class="article__text_in">{{par.text}}</p>{% else %}
+          <p class="article__text">
+            {{par.text}}
+        </p>
+        {% endif %}
+        {% endfor %}
+        <div class="article__footer">
+            <button class="article__button">Read more</button>
+            <ul class="article__tags">
+                {% for tag in tags %}
+                <a href="#" class="article__tags_tag">
+                    <li>{{tag}}</li>
+                </a>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</article>
