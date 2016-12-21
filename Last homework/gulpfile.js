@@ -96,8 +96,8 @@ gulp.task('vendor-css-min', function () {
     .pipe(gulp.dest(path.dist.vendor));
 });
 
-gulp.task('build', ['html', 'css', 'js', 'vendor-css', 'img', 'mock']);
-gulp.task('prod', ['html', 'css-min', 'js-min', 'vendor-css-min', 'img', 'mock']);
+gulp.task('build', ['html', 'css', 'js', 'vendor-css', 'img', 'mock', 'partials']);
+gulp.task('prod', ['html', 'css-min', 'js-min', 'vendor-css-min', 'img', 'mock', 'partials']);
 
 gulp.task('watch', function () {
   gulp.watch(path.css, ['css']);

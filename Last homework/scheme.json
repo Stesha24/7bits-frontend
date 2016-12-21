@@ -1,0 +1,25 @@
+{
+	"title": "Schema",
+	"type": "object",
+	"properties": {
+		"firstName": {
+			"type": "string"
+		},
+		"lastName": {
+			"type": "string"
+		},
+		"email": {
+			"type": "address"
+		},
+        "phone": {
+            "type": "tel"
+        },
+        "date": {
+            "type": "date"
+        },
+        "sex": {
+            "type": "gender"
+        }
+	},
+	"required": ["firstName", "lastName", "email", "phone", "date", "sex"]
+}

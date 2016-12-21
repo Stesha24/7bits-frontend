@@ -1,0 +1,35 @@
+{% set navInactiveItem = 2%} {% extends "layout.html" %} {% block main %}
+<div class="wrapper">
+    <main>
+        <article class="article">
+            <div class="article__content article__content_contact">
+                <h1 class="article__title">About</h1>
+                <div class="article__separate sep sep_contact"></div>
+                <form>
+                    <div id="form" class="article__forms">
+                        <div class="articles__forms_text">First Name</div>
+                        <input id="fName" name="fName" type="text" size="40" placeholder="John" class="article__forms_form form_about">
+                        <div class="articles__forms_text">Last Name</div>
+                        <input id="lName" name="lName" type="text" size="40" placeholder="Doe" class="article__forms_form form_about">
+                        <div class="articles__forms_text">E-mail</div>
+                        <input id="email" name="email" type="text" size="40" placeholder="Email" class="article__forms_form form_about">
+                        <div class="articles__forms_text">Phone</div>
+                        <input id="tel" name="phone" type="text" size="40"  class="article__forms_form form_about" placeholder="+_(___)___-__-__">
+                        <div class="articles__forms_text">Date of Birth</div>
+                        <input id="date" name="date" type="text" size="40" placeholder="DD/MM/YYYY" class="article__forms_form form_about">
+                        <div class="articles__forms_text">Sex</div>
+                        <div class="article__forms_radio" ><input id="radio1" class="radio" name="sex" type="radio" value="male">
+                        <label for="radio1">Male</label> 
+                        </div>
+                        <div class="article__forms_radio last" ><input id="radio2" class="radio" name="sex" type="radio" value="female">
+                        <label for="radio2">Female</label> 
+                        </div>
+                        <button id="submit" name="send" type="submit" class="article__button">Submit</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </article>
+    </main>
+</div>
+{% endblock %}

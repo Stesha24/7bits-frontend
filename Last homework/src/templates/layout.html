@@ -3,14 +3,16 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="keywords" content="Palo alto, Yosemite"> 
+    <meta name="keywords" content="Palo alto, Yosemite">
     <meta name="description" content="Palo alto">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="./images/favicon.ico" sizes="32x32"/>
+    <link rel="shortcut icon" href="./images/favicon.ico" sizes="32x32" />
     <title>Palo alto</title>
     <link rel="stylesheet" href="./vendor/vendor.css">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    
     
 </head>
 
@@ -18,49 +20,46 @@
     <!--
     <div class="progress-bar"></div>
 -->
-   <div class="wrapper">
-    <header>
-        <a href="index.html"><img src="./images/logo.png" alt=""></a>
-        <nav>
-    <ul class="nav__items">
-        <a {% if navInactiveItem == 1 %}class="nav__item_inactive item"{% else %}class = "nav__item item"{% endif %} href="index.html">
-            <li>Home</li>
-        </a>
-        <a {% if navInactiveItem == 2 %} class="nav__item_inactive item"{% else %} class = "nav__item item" {% endif %}  href="#">
-            <li>About</li>
-        </a>
-        <a {% if navInactiveItem == 3 %} class="nav__item_inactive item"{% else %} class = "nav__item item" {% endif %}  href="#">
-            <li>Archive</li>
-        </a>
-        <a {% if navInactiveItem == 4 %} class="nav__item_inactive item"{% else %} class = "nav__item item" {% endif %} href="contact.html">
-            <li>Contact</li>
-        </a>
-        <a class="nav__item_inactive item search" href="#">
-            <li></li>
-        </a>
-    </ul>
-</nav>
-    </header>
-</div>
-    {% block main %}
-   
-    
-    {% endblock %}
+    <div class="wrapper">
+        <header>
+            <a href="index.html"><img src="./images/logo.png" alt=""></a>
+            <nav>
+                <ul class="nav__items">
+                    <a {% if navInactiveItem==1 %}class="nav__item_inactive item" {% else %}class="nav__item item" {% endif %} href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a {% if navInactiveItem==2 %} class="nav__item_inactive item" {% else %} class="nav__item item" {% endif %} href="about.html">
+                        <li>About</li>
+                    </a>
+                    <a {% if navInactiveItem==3 %} class="nav__item_inactive item" {% else %} class="nav__item item" {% endif %} href="#">
+                        <li>Archive</li>
+                    </a>
+                    <a {% if navInactiveItem==4 %} class="nav__item_inactive item" {% else %} class="nav__item item" {% endif %} href="contact.html">
+                        <li>Contact</li>
+                    </a>
+                    <a class="nav__item_inactive item search" href="#">
+                        <li></li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    {% block main %} {% endblock %}
 
     <footer>
         <div class="footer__content">
             <a href="index.html"><img src="./images/logo.png" alt="text-picture" class="footer__logo"></a>
             <ul class="footer__menu">
-                <a href="index.html" {% if navInactiveItem == 1 %} class="footer__item_inactive item"{% else %} class = "footer__item item" {% endif %}>
+                <a href="index.html" {% if navInactiveItem==1 %} class="footer__item_inactive item" {% else %} class="footer__item item" {% endif %}>
                     <li>Home</li>
                 </a>
-                <a href="#" {% if navInactiveItem == 2 %} class="footer__item_inactive item"{% else %} class = "footer__item item" {% endif %}>
+                <a href="#" {% if navInactiveItem==2 %} class="footer__item_inactive item" {% else %} class="footer__item item" {% endif %}>
                     <li>About</li>
                 </a>
-                <a href="#"{% if navInactiveItem == 3 %} class="footer__item_inactive item"{% else %} class = "footer__item item" {% endif %}>
+                <a href="#" {% if navInactiveItem==3 %} class="footer__item_inactive item" {% else %} class="footer__item item" {% endif %}>
                     <li>Archive</li>
                 </a>
-                <a href="contact.html" {% if navInactiveItem == 4 %} class="footer__item_inactive item"{% else %} class = "footer__item item" {% endif %}>
+                <a href="contact.html" {% if navInactiveItem==4 %} class="footer__item_inactive item" {% else %} class="footer__item item" {% endif %}>
                     <li>Contact</li>
                 </a>
                 <a href="#" class="footer__item item search search_foot">
@@ -88,8 +87,10 @@
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="http://mozilla.github.io/nunjucks/files/nunjucks.min.js"></script>
     <script src="./scripts/scripts.js"></script>
+
 </body>
 
 </html>
